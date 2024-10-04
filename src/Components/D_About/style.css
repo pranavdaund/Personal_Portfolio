@@ -1,0 +1,41 @@
+.main-about {
+  @apply w-full h-full -z-10;
+}
+.main-div {
+  @apply w-3/5 
+  /* ml-44  h-full */
+  relative left-44  my-16
+  flex flex-col justify-evenly;
+}
+.about-heading {
+  color: #42446e;
+  @apply text-2xl font-bold my-2;
+}
+
+@media (max-width: 640px) {
+  .main-about {
+    @apply mb-4 relative mt-0;
+  }
+  .main-div {
+    @apply w-4/5 
+    /* ml-44  */ 
+     left-10;
+  }
+
+  .about-heading {
+    color: #42446e;
+    @apply text-lg font-semibold my-1;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .main-div {
+    @apply w-4/5 
+  /* ml-44  */ relative left-16 
+    /* mb-40; */;
+  }
+  .about-heading {
+    color: #42446e;
+    @apply text-lg font-semibold my-1;
+  }
+}

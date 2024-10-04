@@ -1,0 +1,77 @@
+.main-conatct {
+  @apply h-[80vh] 
+  flex justify-center 
+   /* mt-44  */
+  w-full text-center
+  z-0;
+}
+
+.contact-div {
+  @apply flex flex-col 
+  justify-center 
+  items-center;
+}
+
+.contact-top {
+  color: #42446e;
+  @apply text-5xl
+  font-bold;
+}
+
+.contact-bottom {
+  background: linear-gradient(to right, #13b0f5, #e70faa);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+  @apply text-4xl mt-4
+   text-gray-700
+    font-bold;
+}
+
+@media (max-width: 640px) {
+  .main-conatct {
+    @apply h-[57vh];
+  }
+
+  .contact-div {
+    @apply /* mt-56 */
+    flex flex-col justify-center items-center;
+  }
+
+  .contact-top {
+    @apply text-xl;
+  }
+
+  .contact-bottom {
+    @apply text-base
+    mt-4;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 860px) {
+  /* .main-conatct {
+    @apply mt-24;
+  } */
+
+  .contact-top {
+    @apply text-2xl;
+  }
+
+  .contact-bottom {
+    @apply text-xl
+    mt-4;
+  }
+}
+
+@media (min-width: 861px) and (max-width: 1024px) {
+  /* main-conatct */
+
+  .contact-top {
+    @apply text-3xl;
+  }
+
+  .contact-bottom {
+    @apply text-2xl
+    mt-4;
+  }
+}

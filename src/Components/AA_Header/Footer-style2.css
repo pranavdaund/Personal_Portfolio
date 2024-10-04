@@ -1,0 +1,128 @@
+.footer {
+  @apply w-screen h-16 
+  fixed bottom-14;
+}
+
+.footer-top {
+  @apply flex justify-evenly items-center;
+}
+
+.footer-top-left {
+  @apply w-1/4;
+}
+.footer-top-logo {
+  @apply w-28 ml-10;
+}
+
+.footer-top-right {
+  @apply w-2/4 flex justify-evenly items-center;
+}
+
+.footer-top-contact {
+  @apply w-4/5 flex justify-evenly items-center;
+}
+
+.footer-top-social {
+  @apply w-1/5 flex gap-3;
+}
+
+.brek {
+  /* @apply my-2 */
+  /* h-1; */
+  @apply mb-3;
+}
+
+.footer-bottom {
+  @apply flex justify-evenly
+  
+  /* bg-black; */;
+}
+
+.footer-bottom-element {
+  color: #42446e;
+  @apply w-1/2 flex justify-evenly;
+}
+
+.footer-bottom-name {
+  background: linear-gradient(to right, #13b0f5, #e70faa);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  @apply mr-20 /*(10)*/;
+}
+
+@media (max-width: 640px) {
+  .footer {
+    @apply w-screen h-16 fixed bottom-40;
+  }
+  .footer-top {
+    @apply flex flex-col justify-evenly items-center;
+  }
+  .footer-top-left {
+    @apply w-full flex justify-center;
+  }
+
+  .footer-top-logo {
+    @apply w-24 ml-0;
+  }
+  .footer-top-right {
+    @apply w-full flex flex-col justify-evenly items-center;
+  }
+
+  .footer-top-contact {
+    @apply w-full flex flex-col  gap-3;
+  }
+
+  .footer-top-social {
+    @apply my-2;
+  }
+
+  .footer-bottom {
+    @apply flex 
+    flex-col
+    justify-evenly
+    items-center
+    gap-2
+    
+  /* bg-black; */;
+  }
+
+  .footer-bottom-element {
+    @apply w-4/5
+    text-sm
+    flex
+    justify-between;
+  }
+
+  .footer-bottom-name {
+    @apply mr-0;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1040px) {
+  .footer-top-left {
+    @apply w-1/5;
+  }
+
+  .footer-top-logo {
+    @apply w-24 ml-7;
+  }
+
+  .footer-top-right {
+    @apply w-3/4 flex justify-between items-center;
+  }
+
+  .footer-bottom {
+    @apply flex justify-evenly
+    pb-8
+  /* bg-black; */;
+  }
+
+  .footer-bottom-element {
+    @apply w-1/2
+    text-base;
+  }
+
+  .footer-bottom-name {
+    @apply mr-4;
+  }
+}

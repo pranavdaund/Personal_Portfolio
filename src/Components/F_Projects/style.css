@@ -1,0 +1,30 @@
+.project-main-div1 {
+  @apply w-full h-full mt-10
+  flex justify-center items-center;
+}
+
+.project-main-div2 {
+  @apply flex  flex-wrap justify-center  gap-5;
+}
+
+@media (max-width: 1200px) {
+  .project-main-div1 {
+    @apply mt-5 mb-28 flex justify-center 
+  items-center;
+  }
+
+  .project-main-div2 {
+    @apply flex  flex-wrap   gap-5;
+  }
+}
+
+@media (max-width: 640px) {
+  .project-main-div1 {
+    @apply mt-5 mb-24 flex justify-center 
+  items-center;
+  }
+
+  .project-main-div2 {
+    @apply flex  flex-wrap   gap-5;
+  }
+}

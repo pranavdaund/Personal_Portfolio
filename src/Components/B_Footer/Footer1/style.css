@@ -1,0 +1,140 @@
+.footerss {
+  @apply fixed
+    w-full
+    h-28
+    right-0
+    mb-4
+    bottom-0;
+}
+
+.footer-topss {
+  @apply flex
+  items-center
+  justify-evenly;
+}
+
+.footer-top-logoss {
+  @apply w-28
+  relative
+  /* left-10   (1) */
+  /* -left-3; */;
+}
+
+.footer-top-socialss {
+  @apply flex
+  /* mr-0 (2) */
+  gap-4;
+}
+
+.footer-top-iconss {
+  @apply w-7;
+}
+
+.brekss {
+  @apply my-1
+  /* h-1; */;
+}
+
+.footer-bottomss {
+  @apply flex justify-evenly
+  pb-8
+  /* bg-black; */;
+}
+
+.footer-bottom-elementss {
+  color: #42446e;
+  @apply w-1/2 flex justify-evenly;
+}
+
+.footer-bottom-namess {
+  background: linear-gradient(to right, #13b0f5, #e70faa);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  @apply mr-20 /*(10)*/;
+}
+
+@media (max-width: 640px) {
+  .footerss {
+    @apply mb-28 /*(4 - 40)*/;
+  }
+
+  .footer-topss {
+    @apply flex
+    flex-col
+    justify-evenly 
+    /* mt-10 (3)*/
+    gap-1
+    /* items-center; */;
+  }
+
+  .footer-top-logoss {
+    @apply w-28
+    /* relative (5)*/
+    /* left-0 (6) */
+  /* -left-3; */;
+  }
+
+  .footer-top-socialss {
+    @apply flex
+    /* mr-0 (7) */
+    gap-4;
+  }
+
+  .footer-bottomss {
+    @apply flex 
+    flex-col
+    justify-evenly
+    items-center
+    gap-2
+    
+  /* bg-black; */;
+  }
+
+  .footer-bottom-elementss {
+    @apply w-4/5
+    text-sm
+    flex
+    justify-between;
+  }
+
+  .footer-bottom-namess {
+    @apply mr-0;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 860px) {
+  .footer-top-logoss {
+    @apply w-28
+    relative
+    /* left-2 (8)*/
+  /* -left-3; */;
+  }
+
+  .footer-top-socialss {
+    @apply flex
+    /* mr-0 (9)*/
+    gap-4;
+  }
+
+  .footer-bottomss {
+    @apply flex justify-evenly
+    pb-8
+  /* bg-black; */;
+  }
+
+  .footer-bottom-elementss {
+    @apply w-1/2
+    text-base;
+  }
+
+  .footer-bottom-namess {
+    @apply mr-4;
+  }
+}
+/* @media (min-width: 641px) and (max-width: 860px) {
+  .footer-top-social {
+    @apply flex
+    mr-4
+    gap-4;
+  }
+} */

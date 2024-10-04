@@ -1,0 +1,119 @@
+.header {
+  @apply w-full h-16 sticky  top-0 bg-white z-10;
+}
+
+.header-main-div {
+  @apply my-6 flex justify-evenly items-center bg-white;
+}
+
+.header-left {
+  @apply w-1/4;
+}
+.header-left-logo {
+  @apply w-28 ml-10;
+}
+
+.header-right {
+  @apply w-2/4 flex justify-evenly items-center;
+}
+
+.header-elements {
+  @apply w-4/5 flex justify-evenly items-center;
+}
+
+.header-social {
+  @apply w-1/5 flex gap-3;
+}
+
+.header-menu {
+  @apply w-1/5 flex gap-3 hidden;
+}
+
+.header-menu-icon {
+  @apply text-xl font-semibold;
+}
+
+.header-element-link {
+  @apply py-2 pr-4 pl-3 
+  duration-200  border-b 
+  border-gray-100 hover:bg-gray-50 
+  lg:hover:bg-transparent 
+  lg:border-0 hover:text-orange-700 
+  lg:p-0;
+}
+
+@media (max-width: 640px) {
+  .header-main-div {
+    @apply w-full h-full my-4 flex justify-between items-center bg-white;
+  }
+
+  .header-left {
+    @apply w-1/2;
+  }
+
+  .header-left-logo {
+    @apply w-24 ml-7;
+  }
+
+  .header-right {
+    @apply /* w-2/5  */ w-full
+    absolute 
+    top-16 py-6 
+    rounded-lg
+    flex flex-col justify-evenly 
+    gap-4 
+     bg-white 
+     shadow-lg
+     /* border-2 border-black; */;
+  }
+
+  .menu-web {
+    @apply hidden;
+  }
+  .header-elements {
+    @apply flex flex-col justify-evenly gap-4;
+  }
+
+  .header-social {
+    @apply w-full flex justify-center gap-3;
+  }
+  .header-social-icon {
+    @apply w-7;
+  }
+
+  .header-menu {
+    @apply w-1/2 flex flex-row-reverse mr-7 gap-3;
+  }
+
+  .header-menu-icon {
+    @apply text-2xl font-bold cursor-pointer;
+  }
+
+  /* .header-menu: checked ~; */
+}
+
+@media (min-width: 641px) and (max-width: 1040px) {
+  .header-left {
+    @apply w-1/5;
+  }
+  .header-left-logo {
+    @apply w-24 ml-7;
+  }
+
+  .header-right {
+    @apply w-3/4 flex justify-evenly items-center;
+  }
+
+  .header-elements {
+    @apply w-4/5 flex justify-evenly items-center;
+  }
+  .header-element-link {
+    @apply py-1 pr-2 pl-1;
+  }
+
+  .header-social {
+    @apply w-1/5 flex gap-3;
+  }
+}
+
+/*  */

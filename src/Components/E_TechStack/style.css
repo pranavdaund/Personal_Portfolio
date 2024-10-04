@@ -1,0 +1,95 @@
+.tectstack-main {
+  @apply w-full
+   z-0 
+  h-full  
+  mt-10
+  px-40;
+}
+
+.techstack-main-div {
+}
+.techstack-heading {
+  color: #42446e;
+  @apply text-4xl underline ml-20
+  font-bold;
+}
+.techstack-paragrapgh {
+  @apply my-5 ml-20
+  text-lg;
+}
+
+.techstack-elements {
+  @apply w-full flex px-28 
+  flex-wrap
+  justify-evenly gap-1
+  items-end
+  /* gap-20; */;
+}
+
+.techstack-element-icon {
+  @apply w-20 mr-4;
+}
+
+@media (max-width: 640px) {
+  .tectstack-main {
+    @apply p-5 pt-0 
+    my-10
+    h-[50vh] /* change for small screen overlap */;
+  }
+  .techstack-heading {
+    color: #42446e;
+    @apply text-2xl  ml-6;
+  }
+  .techstack-paragrapgh {
+    @apply my-3  ml-6;
+  }
+
+  .techstack-elements {
+    @apply gap-4   px-4 items-center;
+  }
+
+  .techstack-element-icon {
+    @apply w-11;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 860px) {
+  .tectstack-main {
+    @apply w-full my-10 
+      px-10;
+  }
+  .techstack-heading {
+    @apply text-2xl  ml-8;
+  }
+  .techstack-paragrapgh {
+    @apply my-6 ml-8;
+  }
+
+  .techstack-elements {
+    @apply gap-4 px-10 items-center;
+  }
+
+  .techstack-element-icon {
+    @apply w-14;
+  }
+}
+@media (min-width: 860px) and (max-width: 1060px) {
+  .tectstack-main {
+    @apply mt-10 
+  px-20;
+  }
+  .techstack-heading {
+    @apply text-2xl  ml-8;
+  }
+  .techstack-paragrapgh {
+    @apply my-6 ml-8;
+  }
+
+  .techstack-elements {
+    @apply gap-4 px-12;
+  }
+
+  .techstack-element-icon {
+    @apply w-16;
+  }
+}
