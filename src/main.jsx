@@ -20,8 +20,8 @@ const router = createBrowserRouter(
       <Route path='techstack' element={<TechStack />} />
       <Route path='project' element={<Project />} />
       <Route path='contact' element={<Contact />} />
-      <Route path='demo' element={<Demo />} />
-      <Route path='demo2' element={<Demo2 />} />
+      {/* <Route path='demo' element={<Demo />} />
+      <Route path='demo2' element={<Demo2 />} /> */}
       <Route path='profile' element={<Profile />} />
 
 
