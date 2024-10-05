@@ -10,6 +10,7 @@ import TechStack from './Components/E_TechStack/TechStack'
 import Project from './Components/F_Projects/Project'
 import Demo from './Components/Demo/Demo'
 import Demo2 from './Components/Demo/Demo2'
+import Profile from './Components/Profiles/Profile'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,7 +22,7 @@ const router = createBrowserRouter(
       <Route path='contact' element={<Contact />} />
       <Route path='demo' element={<Demo />} />
       <Route path='demo2' element={<Demo2 />} />
-
+      <Route path='profile' element={<Profile />} />
 
 
     </Route>
