@@ -1,5 +1,5 @@
 ## Personal_Portfolio
-Personal Portfolio
+Personal Portfolio <br>
 GitHub Repository: Personal Portfolio
 
 This project is a modern, fully responsive personal portfolio developed using React JS. The portfolio is designed to showcase your skills, projects, and professional experience in a visually appealing and user-friendly manner. Key features include smooth navigation, a clean and minimalistic design, and cross-device compatibility, ensuring an optimal viewing experience on both desktop and mobile devices.
